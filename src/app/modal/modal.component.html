@@ -1,0 +1,11 @@
+<!-- The Modal -->
+<div id="myModal" class="modal" [style.display]="visible?'block':'none'" appModal>
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close"(click)="close()">&times;</span>
+      <ng-content target=".title"></ng-content>
+    <p>
+      <ng-content target=".content"></ng-content>
+    </p>
+  </div>
+</div>
