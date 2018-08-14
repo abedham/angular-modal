@@ -15,9 +15,11 @@ export class ModalComponent implements OnInit {
     // this.renderer.setStyle(this.el.nativeElement, "display", "block");
     // this.renderer.setStyle(this.el.nativeElement, "display", "block");
     this.visible = true;
+    document.body.style.overflow = "hidden";
   }
   close() {
     this.visible = false;
+    document.body.style.overflow = "auto";
     // this.renderer.setStyle(this.el.nativeElement, "display", "nonde");
   }
   ngOnInit() {
